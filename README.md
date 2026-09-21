@@ -248,31 +248,3 @@ BUILD SUCCESSFUL in 14s
 ```
 The generated APK will be available at:
 `app/build/outputs/apk/debug/app-debug.apk`
-
----
-
-## 🎬 Live 3-Minute Hackathon Demo Script
-*(Designed for iQOO Hackathon 2026 Pitch - Smart Living Track)*
-
-* **0:00 - 0:35 | The Problem & Vision:**
-  * *"Field engineers and homeowners lose hours searching manuals when solar inverters or HVAC units fail—especially in subterranean basements with zero cellular service. Meet SeeFix: an on-device, multimodal AI Field Engineer."*
-* **0:35 - 1:15 | Multimodal Vision & Local Gemma 2B:**
-  * Point camera at a simulated solar inverter error code.
-  * Show keyframe extraction capturing the flashing red LED indicator.
-  * Switch off Wi-Fi/Cellular data: **Local Gemma 2B LiteRT Engine** instantly analyzes the image offline and diagnoses `E-04: DC Ground Fault`.
-* **1:15 - 2:00 | Interactive Voice Guidance & Visual Step Verification:**
-  * Tap voice input: *"How do I fix this safely?"*
-  * SeeFix speaks back step-by-step safety instructions with a yellow AR bounding box pointing to the DC Disconnect Switch.
-  * Turn off switch: **Edge Vision Analyzer** verifies step completion in real time and checks off step 1.
-* **2:00 - 2:35 | Bounded Agent & Local Store Finder:**
-  * SeeFix identifies a blown 15A Solar DC fuse.
-  * Agent executes `StoreSearchTool` offline. **Native Canvas Map Engine** loads instantly showing the 2 closest electrical supply stores within 3.5 km.
-* **2:35 - 3:00 | Session Ledger & Closing:**
-  * Show auto-generated service report saved to Room DB.
-  * *"100% offline-capable, provider-independent, and hyper-reliable. SeeFix is smart living engineered for real-world reliability."*
-
----
-
-<p align="center">
-  <b>Built for iQOO Hackathon 2026 — Smart Living Track (Hyderabad)</b>
-</p>
