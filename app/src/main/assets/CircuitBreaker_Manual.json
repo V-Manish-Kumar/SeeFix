@@ -1,0 +1,56 @@
+{
+  "documentId": "MAN-CB-2025",
+  "title": "Main Electrical Panel Circuit Breaker Manual",
+  "source": "CircuitBreaker_Manual.json",
+  "domain": "ELECTRICAL",
+  "documentType": "TROUBLESHOOTING_GUIDE",
+  "manufacturer": "Square D",
+  "model": "CB-200A-MAIN",
+  "equipmentType": "Circuit Breaker Panel",
+  "component": "Dual Pole Breaker Switch",
+  "language": "en",
+  "version": "1.0",
+  "safetyLevel": "CRITICAL_STOP",
+  "tags": ["electrical", "breaker", "trip", "overload", "short circuit", "main panel", "bus bar"],
+  "sections": [
+    {
+      "sectionId": "sec_cb_safety",
+      "sectionTitle": "Electrical Panel Safety Clearance & Hazard Verification",
+      "content": "HAZARD: ALWAYS USE HIGH-VOLTAGE INSULATED GLOVES WHEN WORKING NEAR BUS BARS. Do not touch exposed copper main terminals under any circumstances while energised. If panel displays signs of arcing or burning odor, TURN OFF MAIN SERVICE BREAKER immediately.",
+      "pageNumber": 1,
+      "problemKeywords": ["hazard", "gloves", "bus bar", "arcing", "burning", "insulated"],
+      "safetyWarnings": [
+        "HAZARD: ALWAYS USE HIGH-VOLTAGE INSULATED GLOVES WHEN WORKING NEAR BUS BARS.",
+        "Do not touch exposed copper main terminals under any circumstances while energised."
+      ],
+      "specifications": {
+        "Panel Rating": "120/240V AC Single Phase 200A",
+        "Breaker Type": "Thermal-Magnetic Dual Pole 30A",
+        "Bus Bar Voltage": "240V RMS L1-L2",
+        "Torque Specification": "45 in-lbs for lug connectors"
+      },
+      "steps": [
+        "Stand on rubber dry mat and verify panel safety clearance.",
+        "Inspect panel cover for hot spots or discoloration."
+      ]
+    },
+    {
+      "sectionId": "sec_breaker_reset",
+      "sectionTitle": "Dual Pole Breaker Reset & Overload Diagnostics",
+      "content": "Dual pole circuit breaker repeatedly trips or lever rests in center position due to branch overload condition or internal bimetallic strip trip latch lockout. Firmly push the center-tripped breaker toggle switch all the way to OFF until it clicks and resets internal spring tension before switching back to ON.",
+      "pageNumber": 2,
+      "problemKeywords": ["breaker", "trip", "tripped", "no power", "short circuit", "overload", "main panel"],
+      "safetyWarnings": [
+        "CAUTION: If breaker trips immediately upon resetting, do not force switch. A direct line-to-ground short circuit exists."
+      ],
+      "specifications": {
+        "Trip Mechanism": "Thermal-Magnetic Bimetallic",
+        "Short Circuit Interrupting Rating": "10,000 AIR"
+      },
+      "steps": [
+        "Push center-tripped breaker toggle switch completely to OFF position until spring clicks.",
+        "Switch breaker to ON with a single smooth motion while facing away from panel."
+      ]
+    }
+  ]
+}

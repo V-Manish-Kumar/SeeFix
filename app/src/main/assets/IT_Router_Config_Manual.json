@@ -1,0 +1,53 @@
+{
+  "documentId": "DOC-IT-ROUTER-001",
+  "title": "Enterprise Router & Network Gateway Configuration Manual",
+  "source": "IT_Router_Config_Manual.json",
+  "domain": "IT_NETWORKING",
+  "documentType": "CONFIGURATION_GUIDE",
+  "manufacturer": "Cisco Systems",
+  "model": "ISR-4331-K9",
+  "equipmentType": "Enterprise Router",
+  "component": "WAN Interface & Management Port",
+  "language": "en",
+  "version": "2.1",
+  "safetyLevel": "LOW",
+  "tags": ["it_networking", "router", "vlan", "wan", "led", "configuration", "cisco"],
+  "sections": [
+    {
+      "sectionId": "sec_router_led",
+      "sectionTitle": "Router LED Diagnostics & Interface Status",
+      "content": "System status LEDs provide immediate diagnostic feedback. STAT LED solid green indicates normal operation. Amber STAT LED indicates boot diagnostic failure or system thermal warning. WAN link LED amber/off indicates physical carrier loss or SFP transceiver mismatch.",
+      "pageNumber": 1,
+      "problemKeywords": ["led", "diagnostic", "stat", "amber", "wan", "sfp", "carrier loss", "status"],
+      "safetyWarnings": [
+        "CAUTION: Do not stare directly into active fiber optic transceiver optical ports."
+      ],
+      "specifications": {
+        "Console Baud Rate": "9600 8-N-1",
+        "Power Consumption": "42 W"
+      },
+      "steps": [
+        "Observe front panel STAT and SYS LED indicators.",
+        "Verify RJ-45 Cat6 cable seating in GigabitEthernet 0/0/0 port."
+      ]
+    },
+    {
+      "sectionId": "sec_wan_reset",
+      "sectionTitle": "WAN Interface Reset & VLAN Routing Configuration",
+      "content": "To resolve WAN interface packet drop or ARP timeout, access command line interface (CLI) via console cable. Execute 'interface GigabitEthernet0/0/0' followed by 'shutdown' and 'no shutdown' commands to reset phy layer. Configure sub-interfaces with 'encapsulation dot1Q <vlan-id>' for trunk VLAN routing.",
+      "pageNumber": 2,
+      "problemKeywords": ["wan", "reset", "vlan", "routing", "cli", "ip address", "trunk", "gateway"],
+      "safetyWarnings": [
+        "NOTE: Interface reset will briefly interrupt all active WAN network traffic."
+      ],
+      "specifications": {
+        "Default IP": "192.168.1.1",
+        "VLAN Protocol": "IEEE 802.1Q"
+      },
+      "steps": [
+        "Connect console cable to RJ-45 console port and launch terminal emulator.",
+        "Issue 'shutdown' then 'no shutdown' on WAN interface GE0/0/0."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.SeeFix" parent="Theme.MaterialComponents.Light" />
+</resources>

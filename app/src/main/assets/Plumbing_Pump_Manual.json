@@ -1,0 +1,72 @@
+{
+  "documentId": "DOC-PLUMB-PUMP-001",
+  "title": "Submersible Sump Pump & Piping Installation Manual",
+  "source": "Plumbing_Pump_Manual.json",
+  "domain": "PLUMBING",
+  "documentType": "INSTALLATION_GUIDE",
+  "manufacturer": "Zoeller",
+  "model": "M53 Mighty-Mate",
+  "equipmentType": "Submersible Sump Pump",
+  "component": "Impeller & Check Valve Assembly",
+  "language": "en",
+  "version": "1.2",
+  "safetyLevel": "MEDIUM",
+  "tags": ["plumbing", "pump", "check valve", "impeller", "sump", "pressure switch", "pipe"],
+  "sections": [
+    {
+      "sectionId": "sec_pump_safety",
+      "sectionTitle": "Sump Pump Electrical & Water Safety Guidelines",
+      "content": "WARNING: Electrical shock hazard. Always disconnect main power breaker before reaching into sump basin. Pump must be connected to a dedicated Ground Fault Circuit Interrupter (GFCI) outlet. Never handle pump with wet hands or standing in water.",
+      "pageNumber": 1,
+      "problemKeywords": ["pump", "water", "gfci", "shock", "basin", "sump", "safety"],
+      "safetyWarnings": [
+        "WARNING: Shock hazard in standing water. Disconnect GFCI outlet before basin servicing."
+      ],
+      "specifications": {
+        "Motor HP": "0.3 HP",
+        "Discharge Size": "1.5 in NPT",
+        "Max Head": "19.2 ft"
+      },
+      "steps": [
+        "Unplug pump power cord from GFCI wall receptacle.",
+        "Inspect sump pit for debris and standing sediment."
+      ]
+    },
+    {
+      "sectionId": "sec_impeller_clearing",
+      "sectionTitle": "Impeller Blockage Removal & Volute Inspection",
+      "content": "If pump motor hums but fails to discharge water, the impeller or volute intake may be blocked by gravel or debris. Remove volute housing screws, clear foreign matter from cast iron impeller vanes, and verify free manual rotation of rotor shaft.",
+      "pageNumber": 2,
+      "problemKeywords": ["impeller", "blockage", "humming", "clog", "volute", "gravel", "debris"],
+      "safetyWarnings": [
+        "CAUTION: Sharp debris may be present inside volute housing. Wear heavy gloves."
+      ],
+      "specifications": {
+        "Impeller Material": "Glass-Filled Thermoplastic",
+        "Solids Handling": "0.5 in max"
+      },
+      "steps": [
+        "Remove lower volute base screws using 3/8-inch socket.",
+        "Clean gravel and debris out of impeller vanes."
+      ]
+    },
+    {
+      "sectionId": "sec_check_valve",
+      "sectionTitle": "Check Valve Replacement & Pressure Switch Calibration",
+      "content": "Replace worn 1.5-inch inline rubber check valve to prevent discharge water backflow into sump basin. Ensure flow direction arrow on check valve points upward away from pump. Calibrate vertical float pressure switch travel to prevent continuous pump cycling.",
+      "pageNumber": 3,
+      "problemKeywords": ["check valve", "backflow", "pressure switch", "float switch", "cycling", "pipe"],
+      "safetyWarnings": [
+        "NOTICE: Ensure weeping hole (3/16 inch) is drilled in discharge pipe below check valve to prevent airlock."
+      ],
+      "specifications": {
+        "Check Valve Size": "1.5 in Full-Flow",
+        "Float Switch Type": "Mechanical Float Switch"
+      },
+      "steps": [
+        "Loosen stainless steel hose clamps on 1.5-inch check valve.",
+        "Install replacement check valve ensuring arrow points UP."
+      ]
+    }
+  ]
+}

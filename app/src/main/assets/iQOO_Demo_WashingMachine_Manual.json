@@ -1,0 +1,56 @@
+{
+  "documentId": "MAN-WM-IQOO-2025",
+  "title": "Smart Washing Machine (iQOO Demo Appliance) Service Manual",
+  "source": "iQOO_Demo_WashingMachine_Manual.json",
+  "domain": "APPLIANCE",
+  "documentType": "SERVICE_MANUAL",
+  "manufacturer": "iQOO",
+  "model": "WM-9000X",
+  "equipmentType": "Washing Machine",
+  "component": "Drain Pump & Inverter Drive Board",
+  "language": "en",
+  "version": "1.0",
+  "safetyLevel": "HIGH",
+  "tags": ["appliance", "washing machine", "drain", "pump", "capacitor", "e20", "inverter"],
+  "sections": [
+    {
+      "sectionId": "sec_wm_safety",
+      "sectionTitle": "Service Safety & Capacitor Discharge",
+      "content": "DANGER: Unplug appliance from AC outlet before opening back service panel. CAUTION: High capacity capacitor C42 can store dangerous residual charge even when unplugged. Ensure drain line is clear of residual water before inspecting drain pump housing.",
+      "pageNumber": 1,
+      "problemKeywords": ["unplug", "capacitor", "c42", "residual charge", "danger", "caution"],
+      "safetyWarnings": [
+        "DANGER: Unplug appliance from AC outlet before opening back service panel.",
+        "CAUTION: High capacity capacitor C42 can store dangerous residual charge even when unplugged."
+      ],
+      "specifications": {
+        "Operating Voltage": "220V - 240V AC 50Hz",
+        "Capacitor Rating": "45uF +/- 5% 450VAC",
+        "Motor Harness Torque": "1.8 Nm",
+        "Drain Pump Impedance": "120 Ohms nominal"
+      },
+      "steps": [
+        "Ensure power leads are disconnected and place multimeter across C42 terminals to test discharge voltage.",
+        "Examine 3-pin motor harness wire leads for thermal discoloration."
+      ]
+    },
+    {
+      "sectionId": "sec_drain_pump",
+      "sectionTitle": "Drain Pump Inspection & Capacitor C42 Replacement",
+      "content": "Washing machine fails to drain water during spin cycle or displays E20 error. Root cause is obstruction in drain pump impeller or faulty 45uF run capacitor on power drive board. Mount replacement 45uF run capacitor onto metal bracket and torque ground screw to 1.8 Nm.",
+      "pageNumber": 2,
+      "problemKeywords": ["drain", "pump", "water", "overflow", "not draining", "e20", "run capacitor"],
+      "safetyWarnings": [
+        "CAUTION: Drain pump housing may contain hot water if cycle was interrupted during wash phase."
+      ],
+      "specifications": {
+        "Drain Pump Motor": "Synchronous 30W",
+        "Error Code": "E20 (Drain Timeout)"
+      },
+      "steps": [
+        "Inspect motor harness and drain pump 3-pin connector.",
+        "Replace faulty 45uF run capacitor on bracket and torque screw to 1.8 Nm."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "documentId": "DOC-AUTO-BRAKE-001",
+  "title": "Automotive Brake System Service & Maintenance Manual",
+  "source": "Automotive_Brake_Manual.json",
+  "domain": "AUTOMOTIVE",
+  "documentType": "SERVICE_MANUAL",
+  "manufacturer": "Brembo",
+  "model": "ABS-Pro-4000",
+  "equipmentType": "Brake System",
+  "component": "Brake Caliper & Bleeder",
+  "language": "en",
+  "version": "1.0",
+  "safetyLevel": "HIGH",
+  "tags": ["automotive", "brake", "rotor", "bleed", "fluid", "caliper"],
+  "sections": [
+    {
+      "sectionId": "sec_auto_safety",
+      "sectionTitle": "Brake System Safety & Hydraulic Fluid Handling",
+      "content": "DANGER: Brake fluid DOT 4 is hazardous and corrosive to vehicle paint and eyes. Always wear nitrile gloves and protective eyewear. Never inspect or service brake lines while the hydraulic system is hot or under pressure. Vehicle must be securely raised using jack stands.",
+      "pageNumber": 1,
+      "problemKeywords": ["brake", "fluid", "leak", "corrosive", "safety", "jack stand", "danger"],
+      "safetyWarnings": [
+        "DANGER: Corrosive DOT4 brake fluid hazard. Wear eye protection and nitrile gloves.",
+        "WARNING: Use heavy-duty jack stands under chassis frame before removing wheels."
+      ],
+      "specifications": {
+        "Fluid Specification": "DOT 4 Synthetic Brake Fluid",
+        "Minimum Rotor Thickness": "22.0 mm",
+        "Caliper Bolt Torque": "85 Nm"
+      },
+      "steps": [
+        "Lift vehicle with floor jack and seat chassis on 3-ton rated jack stands.",
+        "Inspect master cylinder fluid reservoir level."
+      ]
+    },
+    {
+      "sectionId": "sec_rotor_inspection",
+      "sectionTitle": "Brake Rotor Inspection & Measurement",
+      "content": "Inspect brake disc rotors for deep scoring, rust ridges, or lateral runout exceeding 0.05 mm. Measure rotor thickness using a micrometer at 8 equal points around the friction surface. If thickness is below 22.0 mm, replace rotor.",
+      "pageNumber": 2,
+      "problemKeywords": ["rotor", "disc", "wear", "thickness", "squeal", "vibration", "runout"],
+      "safetyWarnings": [
+        "CAUTION: Brake dust contains fine particulates. Use brake cleaner spray, not compressed air."
+      ],
+      "specifications": {
+        "Max Lateral Runout": "0.05 mm",
+        "Disc Diameter": "300 mm"
+      },
+      "steps": [
+        "Clean brake disc with approved solvent brake cleaner.",
+        "Measure rotor thickness across 8 points using digital micrometer."
+      ]
+    },
+    {
+      "sectionId": "sec_bleed_procedure",
+      "sectionTitle": "Hydraulic Brake Bleed & Air Purge Procedure",
+      "content": "Connect transparent bleeder hose to caliper bleeder valve starting at the furthest wheel from master cylinder (rear right). Submerge hose end in brake fluid reservoir. Depress brake pedal while opening bleeder valve until fluid runs clear without air bubbles.",
+      "pageNumber": 3,
+      "problemKeywords": ["bleed", "spongy", "pedal", "air bubble", "hydraulic", "caliper"],
+      "safetyWarnings": [
+        "WARNING: Ensure master cylinder reservoir does not run dry during bleeding."
+      ],
+      "specifications": {
+        "Bleeder Nipple Torque": "10 Nm",
+        "System Pressure": "1.5 bar"
+      },
+      "steps": [
+        "Attach transparent tubing to rear right caliper bleeder screw.",
+        "Press brake pedal slowly and open bleeder screw 1/4 turn until clear fluid flows."
+      ]
+    }
+  ]
+}

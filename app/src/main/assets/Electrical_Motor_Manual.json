@@ -1,0 +1,73 @@
+{
+  "documentId": "DOC-ELEC-MOTOR-001",
+  "title": "3-Phase Industrial Induction Motor Maintenance Manual",
+  "source": "Electrical_Motor_Manual.json",
+  "domain": "ELECTRICAL",
+  "documentType": "TECHNICAL_MANUAL",
+  "manufacturer": "Siemens",
+  "model": "1LE1001-1AC4",
+  "equipmentType": "Induction Motor",
+  "component": "Stator Winding & Terminal Box",
+  "language": "en",
+  "version": "1.0",
+  "safetyLevel": "CRITICAL_STOP",
+  "tags": ["electrical", "motor", "insulation", "3-phase", "capacitor", "overload"],
+  "sections": [
+    {
+      "sectionId": "sec_motor_safety",
+      "sectionTitle": "High Voltage Safety & Lockout Tagout (LOTO)",
+      "content": "CRITICAL HAZARD: 415V 3-phase AC voltage presents severe shock and electrocution hazard. Before opening junction box or touching motor leads, lock out main disconnect switch and verify zero voltage with CAT III 1000V multimeter across all 3 phases (L1, L2, L3).",
+      "pageNumber": 1,
+      "problemKeywords": ["high voltage", "loto", "shock", "lockout", "multimeter", "zero voltage"],
+      "safetyWarnings": [
+        "CRITICAL HAZARD: 415V AC 3-Phase shock hazard. Isolate power and apply Lockout/Tagout.",
+        "WARNING: Discharge run and start capacitors before touching terminal leads."
+      ],
+      "specifications": {
+        "Rated Voltage": "400V / 690V AC 50Hz",
+        "Insulation Class": "Class F",
+        "Full Load Current": "11.2 A"
+      },
+      "steps": [
+        "Apply LOTO lock to main motor control center (MCC) breaker.",
+        "Test phase-to-phase and phase-to-ground voltage with CAT III 1000V meter."
+      ]
+    },
+    {
+      "sectionId": "sec_insulation_testing",
+      "sectionTitle": "Winding Insulation Resistance & Megohmmeter Testing",
+      "content": "Test stator winding insulation resistance using a 500V or 1000V DC megohmmeter (Megger). Connect test leads between phase terminals (U, V, W) and motor frame ground. Insulation resistance must exceed 100 Megohms for healthy operation. Values below 5 Megohms indicate moisture or insulation breakdown.",
+      "pageNumber": 2,
+      "problemKeywords": ["insulation", "megger", "resistance", "winding", "stator", "ground fault", "short"],
+      "safetyWarnings": [
+        "CAUTION: High DC test voltage applied during megger test. Do not touch leads during test."
+      ],
+      "specifications": {
+        "Min Insulation Resistance": "100 MΩ",
+        "Test DC Voltage": "1000 V DC"
+      },
+      "steps": [
+        "Disconnect motor leads from inverter / starter output terminals.",
+        "Apply 1000V DC megger test between phase U1 and motor frame ground for 60 seconds."
+      ]
+    },
+    {
+      "sectionId": "sec_thermal_overload",
+      "sectionTitle": "Thermal Overload & Capacitor Testing",
+      "content": "If motor trips thermal overload relay, check ambient cooling fan cover for lint or dust blockage. Inspect start/run capacitor capacitance rating using capacitance meter. Verify thermal relay dial setting matches nameplate Full Load Amperes (FLA).",
+      "pageNumber": 3,
+      "problemKeywords": ["thermal", "overload", "capacitor", "tripped", "overheating", "fla", "fan"],
+      "safetyWarnings": [
+        "WARNING: Motor frame temperature can exceed 80°C. Allow motor to cool before handling."
+      ],
+      "specifications": {
+        "Capacitor Rating": "50uF +/- 5% 450VAC",
+        "Overload Trip Range": "9.0 A - 12.5 A"
+      },
+      "steps": [
+        "Check motor cooling fan cowl for dust build-up.",
+        "Measure microfarads on run capacitor with multimeter capacitance mode."
+      ]
+    }
+  ]
+}
